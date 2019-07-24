@@ -123,6 +123,7 @@
 //! # }
 //! ```
 
+#![feature(async_await)]
 #![crate_name = "mysql"]
 #![crate_type = "rlib"]
 #![crate_type = "dylib"]
@@ -149,6 +150,7 @@ pub use crate::myc::uuid;
 mod conn;
 pub mod error;
 mod io;
+mod async_io;
 mod packet;
 
 #[doc(inline)]
